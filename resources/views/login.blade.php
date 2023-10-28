@@ -9,18 +9,9 @@
     <meta name="generator" content="Hugo 0.84.0">
     <title>Login</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">    
-
+    {{-- All credits to bootstrap , this is their login template--}}
     <!-- Bootstrap core CSS -->
-    <link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ asset('site/static/docs/5.0/img/favicons/apple-touch-icon.png') }}" sizes="180x180">
-    <link rel="icon" href="{{ asset('site/static/docs/5.0/assets/img/favicons/favicon-32x32.png') }}" sizes="32x32" type="image/png">
-    <link rel="icon" href="{{ asset('site/static/docs/5.0/assets/img/favicons/favicon-16x16.png') }}" sizes="16x16" type="image/png">
-    <link rel="manifest" href="{{ asset('site/static/docs/5.0//assets/img/favicons/manifest.json') }}">
-    <link rel="mask-icon" href="{{ asset('site/static/docs/5.0/assets/img/favicons/safari-pinned-tab.svg') }}" color="#7952b3">
-    <link rel="icon" href="{{ asset('site/static/docs/5.0/assets/img/favicons/favicon.ico') }}">
+    <link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
     <meta name="theme-color" content="#7952b3">
 
     <style>
@@ -47,7 +38,7 @@
 <main class="form-signin" >
   <form action="{{ route('authenticate') }}" method="POST">
     @csrf
-    <img class="mb-4" src="{{ asset('shiba.svg') }}" alt="" width="72" height="57">
+    <img class="mb-4" src="https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622021.jpg" alt="" width="120" height="90">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
@@ -57,11 +48,6 @@
     <div class="form-floating">
       <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">Password</label>
-    </div>
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
     </div>
     <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>

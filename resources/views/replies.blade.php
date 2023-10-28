@@ -34,6 +34,7 @@
                       class="form-control"
                       name="content"
                       placeholder="Type comment..."
+                      required
                     />
                     <button type="submit" class="btn btn-link text-decoration-none">+ Add a note</button>
                 </form>

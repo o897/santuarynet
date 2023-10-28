@@ -71,7 +71,7 @@
     
   </div>
  
-  <script>
+  {{-- <script>
       // Get a reference to the file input element
       const inputElement = document.querySelector('input[type="file"]');
 
@@ -79,7 +79,7 @@
       const pond = FilePond.create(inputElement);
       
   </script>
-  <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+  <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script> --}}
   
 </body>
  {{-- <footer class="bg-dark text-light py-4 fixed-bottom">
