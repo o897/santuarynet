@@ -53,7 +53,7 @@
                     <form action="category/{{ $category->id}}" method="post">
                       @csrf
                       @method('delete')
-                      <td><button class="btn btn-link" style="text-decoration: none">Delete</button></td>
+                      <td><button type="submit" class="btn btn-danger"><i class="fa fa-trash" href="#" aria-hidden="true"></i></button></td>
                     </form>                   
                   </tr>  
                   @empty

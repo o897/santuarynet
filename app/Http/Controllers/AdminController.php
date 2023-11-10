@@ -31,21 +31,18 @@ class AdminController extends Controller
 
     public function index()
     {
-      
 
         // You should db raw on get the should be a column called count get the count from there        
-   
 
         $startDate = Carbon::now()->subDays(6); // Get the date 7 days ago
         $endDate = Carbon::now(); // Get today's date
-    
         
-            $ticketCounts = DB::table('tickets')
-            ->select(DB::raw('DATE_FORMAT(created_at, "%W") AS day, COUNT(*) as count'))
-            ->whereBetween('created_at', [$startDate, $endDate])
-            ->groupBy('day')
-            ->orderBy('created_at')
-            ->pluck('count', 'day');
+        $ticketCounts = DB::table('tickets')
+        ->select(DB::raw('DATE_FORMAT(created_at, "%W") AS day'), DB::raw('COUNT(*) as count'))
+        ->whereBetween('created_at', [$startDate, $endDate])
+        ->groupBy('day')
+        ->orderBy('day') // Order by the "day" column instead of "created_at"
+        ->pluck('count', 'day');
 
         
         $labels = $ticketCounts->keys();
@@ -78,7 +75,12 @@ class AdminController extends Controller
 
     public function log()
     {
-        $logs = Storage::files('logs/');       
+        $logs = Storage::files('logs/'); 
+            
+        if (count($logs) === 0) {
+            $logs = [];
+        }
+           
         return view('admin.logs',[
             'logs' => $logs
         ]);

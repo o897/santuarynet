@@ -1,12 +1,25 @@
-id: 53724
+Deployed this one giving me issues
+id: 53907
 name: santuarynet
 environments:
     production:
-        database : santuarynet
+        database : santuarynets
         memory: 1024
         cli-memory: 512
         runtime: 'php-8.2:al2'
         build:
             - 'composer install --no-dev'
             - 'php artisan event:cache'
-          # - 'npm ci && npm run build && rm -rf node_modules'
+            - 'npm ci && npm run build && rm -rf node_modules'
+
+# id: 54195
+# name: santuarynet
+# environments:
+#     production:
+#         memory: 1024
+#         cli-memory: 512
+#         runtime: 'php-8.2:al2'
+#         build:
+#             - 'composer install --no-dev'
+#             - 'php artisan event:cache'
+#           - 'npm ci && npm run build && rm -rf node_modules'

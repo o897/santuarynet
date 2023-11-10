@@ -9,6 +9,7 @@
                 <p><a style="text-decoration:none" href="/logs/{{basename($log)}}">{{ basename($log) }}</a></p>   
             </div>
             @empty
+            <p>No log files found</p>
             @endforelse  
         </div>     
     </div>

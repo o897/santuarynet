@@ -15,7 +15,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(ResponseFactoryInterface::class, \Nyholm\Psr7\Factory\Psr17Factory::class);
+
     }
 
     /**

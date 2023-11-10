@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('fontawesome-free-6.4.0-web/css/all.min.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    {{-- <link rel="stylesheet" href="{{ asset('bootstrap-5.0.2/dist/css/bootstrap.min.css') }}"> --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('bootstrap-5.0.2/dist/css/bootstrap.min.css') }}">
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment"></script>
+    <script src="{{asset('fontawesome-free-6.4.0-web/js/all.min.js')}}"></script>
 
 </head>
 
 <body>
-  {{-- Use Ajax, JQuery, JavaScript --}}
 
 <div class="main-container d-flex">
   <div class="sidebar" id="side_nav">
@@ -31,11 +31,11 @@
         Dashboard</a></li>
       <li class=""><a href="/admin/tickets" class="text-decoration-none px-3 py-2 d-block"><i class="px-2 fa-solid fa-ticket"></i>Tickets</a></li>
       <li class=""><a href="/admin/users" class="text-decoration-none px-3 py-2 d-block"><i class="px-2 fa-solid fa-user"></i> Users</a></li>
-      <li class=""><a href="/admin/log" class="text-decoration-none d-flex px-3 py-2 d-block justify-content-between">
+      {{-- <li class=""><a href="/admin/log" class="text-decoration-none d-flex px-3 py-2 d-block justify-content-between">
         <span><i class="px-2 fa-solid fa-file"></i>Logs</span>
         <span class="bg-dark rounded-pill text-white py-0 px-2">{{\App\Models\Log::count() }}</span>
       </a>
-      </li>
+      </li> --}}
       <li class=""><a href="/admin/categories" class="text-decoration-none px-3 py-2 d-block"><i class="px-2 fa-solid fa-list"></i>Categories</a></li>
       <li class=""><a href="/admin/labels" class="text-decoration-none px-3 py-2 d-block"><i class="px-2 fa-solid fa-tag"></i>Labels</a></li>
     </ul>
@@ -136,8 +136,6 @@
         });
 
         </script>
-      
-
 
 </body>
 </html>

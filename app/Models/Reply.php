@@ -10,10 +10,10 @@ class Reply extends Model
     use HasFactory;
     
     protected $primaryKey = 'id';
-    protected $fillable = ['post_id','user_id','content','created_at','updated_at'];
+    public $incrementing = true;
+
+    protected $fillable = ['id','post_id','user_id','content','created_at','updated_at'];
     
-
-
     public function user()
     {
         return $this->belongsTo(User::class,'user_id','id');

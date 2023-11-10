@@ -15,6 +15,9 @@
         "laravel/ui": "^4.1",
         "laravel/vapor-cli": "^1.60",
         "laravel/vapor-core": "^2.33",
+        "laravel/vapor-ui": "^1.7",
+        "nyholm/psr7": "^1.6",
+        "psr/http-factory": "^1.0",
         "spatie/laravel-permission": "^5.8"
     },
     "require-dev": {

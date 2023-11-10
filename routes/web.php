@@ -23,10 +23,11 @@ Route::get('/', function () {
     return view('login');
 })->name('home');
 
-
 Route::get('/test', function () {
-    return view('admin.test');
+    return "Hello World";
 });
+
+
 
 // register routes
 Route::controller(RegisterController::class)->group(function () {
