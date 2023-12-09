@@ -7,6 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
+    <!--      couldnt load public folder cause it was coming from http over to https that prevented the file from being loaded  -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <title>Login</title>
 
     {{-- All credits to bootstrap , this is their login template--}}
