@@ -61,7 +61,8 @@ Route::controller(AdminController::class)->group(function() {
     Route::get('/new','create');
 })->middleware('role:admin');
 
-Route::resource('admin',AdminController::class)->middleware('role:admin');;
+Route::resource('admin',AdminController::class)->middleware('role:admin');
+Route::get('/admin',[AdminController::class,'index'])->middleware('role:admin');
 
 Route::resource('agent',AgentController::class)->middleware('role:agent');
  
