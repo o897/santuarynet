@@ -1,14 +1,8 @@
 <x-layout>
 
   <div class="container px-3 pt-4">
-    {{-- <h1 class="fs-5">Dashboard</h1> --}}
         
-    <p class="text-center">All the core requirements done</p>
-      <div>
-        {{-- Manage Labels, Categories, Priorities and Users, in CRUD way -- see example from that site --}}
-      </div>
-     
-    {{-- Use graph to demonstrate some stats --}}
+    <p class="text-center">Weekly report</p>
 
     <div>
       <canvas id="myChart"></canvas>
