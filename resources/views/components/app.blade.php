@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <title>{{ $title ?? "Dashboard" }}</title>
+<<<<<<< HEAD
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> --}}
@@ -17,6 +20,15 @@
     <link rel="stylesheet" href="{{ asset('bootstrap-5.0.2/dist/css/bootstrap.min.css') }}">
     <script src="{{ asset('bootstrap-5.0.2/dist/js/bootstrap.js') }}"></script>
 
+=======
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+    <script src="{{asset('fontawesome-free-6.4.0-web/js/all.min.js')}}"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--     @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
+>>>>>>> origin/main
 </head>
 <body>
   <div id="content" class="p-4 p-md-5">
@@ -77,16 +89,8 @@
     
   </div>
  
-  {{-- <script>
-      // Get a reference to the file input element
-      const inputElement = document.querySelector('input[type="file"]');
-
-      // Create a FilePond instance
-      const pond = FilePond.create(inputElement);
-      
-  </script>
-  <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script> --}}
-  
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
  {{-- <footer class="bg-dark text-light py-4 fixed-bottom">
     <div class="container">
