@@ -1,5 +1,4 @@
 <x-layout>
-    {{-- Table of users able to filter by their user type --}}
 
     <div class="container">
         <div class="table-responsive pt-5">

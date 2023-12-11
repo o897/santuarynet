@@ -45,7 +45,6 @@ class LoginController extends Controller
         ]);
 
         if(Auth::attempt($credentials)) {
-            // Admin role: 2 , Agent role: 1 , User role: 0
             if (auth()->user()->hasRole('admin')) 
             {
               $request->session()->regenerate();

@@ -51,18 +51,25 @@ Route::controller(AdminController::class)->group(function() {
     Route::get('/admin/log','log');
     Route::get('/admin/categories','categories');
     Route::get('/admin/labels','labels');
+    // resource methods
+    Route::get('/admin','index')->name('admin.index');
+    Route::get('/admin/create','create')->name('admin.create');
+    Route::get('/admin/edit','edit')->name('admin.edit');
+    Route::get('/admin/destroy','destroy')->name('admin.destroy');
+
     Route::post('/admin/store/label','storeLabel');
     Route::post('/admin/store/category','storeCategory');
     Route::delete('/admin/category/{id}', 'deleteCategory');
     Route::delete('/admin/label/{id}','deleteLabel');
-    //
+
+    
     Route::put('/category/update','updateCategory')->name('category.update');
     Route::put('/label/update','updateLabel')->name('label.update');
     Route::get('/logs/{id}','download');
     Route::get('/new','create');
 })->middleware('role:admin');
 
-Route::resource('admin',AdminController::class)->middleware('role:admin');;
+// Route::resource('admin',AdminController::class)->middleware('role:admin');
 
 Route::resource('agent',AgentController::class)->middleware('role:agent');
  

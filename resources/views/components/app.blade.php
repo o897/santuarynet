@@ -7,9 +7,16 @@
     <title>{{ $title ?? "Dashboard" }}</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> --}}
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    {{-- font awesome --}}
+    <script src="{{asset('fontawesome-free-6.4.0-web/js/all.min.js')}}"></script>
+    <script src="{{asset('fontawesome-free-6.4.0-web/js/all.min.js')}}"></script>
+
+    {{-- Bootstrap --}}
+    <link rel="stylesheet" href="{{ asset('bootstrap-5.0.2/dist/css/bootstrap.min.css') }}">
+    <script src="{{ asset('bootstrap-5.0.2/dist/js/bootstrap.js') }}"></script>
+
 </head>
 <body>
   <div id="content" class="p-4 p-md-5">
