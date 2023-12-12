@@ -33,11 +33,11 @@
         Dashboard</a></li>
       <li class=""><a href="/admin/tickets" class="text-decoration-none px-3 py-2 d-block"><i class="px-2 fa-solid fa-ticket"></i>Tickets</a></li>
       <li class=""><a href="/admin/users" class="text-decoration-none px-3 py-2 d-block"><i class="px-2 fa-solid fa-user"></i> Users</a></li>
-      {{-- <li class=""><a href="/admin/log" class="text-decoration-none d-flex px-3 py-2 d-block justify-content-between">
+      <li class=""><a href="/admin/log" class="text-decoration-none d-flex px-3 py-2 d-block justify-content-between">
         <span><i class="px-2 fa-solid fa-file"></i>Logs</span>
         <span class="bg-dark rounded-pill text-white py-0 px-2">{{\App\Models\Log::count() }}</span>
       </a>
-      </li> --}}
+      </li>
       <li class=""><a href="/admin/categories" class="text-decoration-none px-3 py-2 d-block"><i class="px-2 fa-solid fa-list"></i>Categories</a></li>
       <li class=""><a href="/admin/labels" class="text-decoration-none px-3 py-2 d-block"><i class="px-2 fa-solid fa-tag"></i>Labels</a></li>
     </ul>
