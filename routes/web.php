@@ -57,6 +57,7 @@ Route::controller(AdminController::class)->group(function() {
     Route::get('/admin/edit','edit')->name('admin.edit');
     Route::get('/admin/destroy','destroy')->name('admin.destroy');
 
+    Route::put('/admin/{admin}','update')->name('admin.update');
     Route::post('/admin/store/label','storeLabel');
     Route::post('/admin/store/category','storeCategory');
     Route::delete('/admin/category/{id}', 'deleteCategory');
