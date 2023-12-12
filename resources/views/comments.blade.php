@@ -4,8 +4,7 @@
         <div class="col-md-8 col-lg-6">
           <div class="card shadow-0 border" style="background-color: #f0f2f5;">
             <div class="card-body p-4">
-            
-      
+              
               @forelse ($comments as $comment)
               <div class="card mb-4">
                 <div class="card-body">

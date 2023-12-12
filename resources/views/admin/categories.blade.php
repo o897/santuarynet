@@ -1,6 +1,4 @@
 <x-layout>
-     
-     
     <div class="container pt-5">
       <div class="">
         <h4>Create a new category</h4>
@@ -66,5 +64,4 @@
             
           </div>
     </div>
-  
 </x-layout>
