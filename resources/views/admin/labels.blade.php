@@ -50,7 +50,6 @@
                   <form action="label/{{ $label->id}}" method="post">
                     @csrf
                     @method('delete')
-                    
                     <td><button type="submit" class="btn btn-danger"><i class="fa fa-trash" href="#" aria-hidden="true"></i></button> </td>
                   </form>  
                 </tr>  

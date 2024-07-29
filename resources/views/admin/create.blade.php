@@ -3,7 +3,7 @@
     <div class="container">
       <div class="register-form mt-5">
         <h3>Register</h3>
-        <form class="forms-sample" action="/admin" method="POST">
+        <form class="forms-sample" action="/admin/store/user" method="POST">
             @csrf
             <div class="mb-3 mt-3">
               <label for="title" class="form-label">Name</label>

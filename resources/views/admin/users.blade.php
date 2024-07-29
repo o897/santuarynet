@@ -18,7 +18,7 @@
                     <td>{{ $user->getRoleNames()->first()}}</td>
                     <td>
         
-                      <form action="/admin/{{ $user->id }}" method="POST">
+                      <form action="/admin/user/{{ $user->id }}" method="POST">
                         @csrf
                         @method('delete')
                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash" href="#" aria-hidden="true"></i></button> 

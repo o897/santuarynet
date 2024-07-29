@@ -53,18 +53,17 @@ Route::controller(AdminController::class)->group(function() {
     Route::get('/admin/labels','labels');
     // resource methods
     Route::get('/admin','index')->name('admin.index');
-    Route::get('/admin/create','create')->name('admin.create'); //returns the reg form
+    Route::get('/admin/create','create')->name('admin.create');
     Route::get('/admin/edit','edit')->name('admin.edit');
+    Route::get('/admin/destroy','destroy')->name('admin.destroy');
+
     Route::put('/admin/{admin}','update')->name('admin.update');
-    Route::post('/admin/store/user','store');
     Route::post('/admin/store/label','storeLabel');
     Route::post('/admin/store/category','storeCategory');
     Route::delete('/admin/category/{id}', 'deleteCategory');
     Route::delete('/admin/label/{id}','deleteLabel');
     Route::delete('/admin/user/{id}','destroy')->name('admin.destroy');
-    // Route::delete('/admin/user/{id}', function() {
-    //     return "hello";
-    // });
+
 
     
     Route::put('/category/update','updateCategory')->name('category.update');

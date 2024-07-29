@@ -134,10 +134,10 @@ class AdminController extends Controller
     {
         // Register user and assign roles
 
-        $validator = Validator::make($request->all(), [
-            'email' => 'required|email|unique:users,email',
-            'password' => 'required|min:6',
-        ]);
+        // $validator = Validator::make($request->all(), [
+        //     'email' => 'required|email|unique:users,email',
+        //     'password' => 'required|min:6',
+        // ]);
 
         $user = User::create([
             'title' => $request->title,
